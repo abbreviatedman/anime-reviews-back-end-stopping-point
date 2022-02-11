@@ -27,9 +27,8 @@ anime.get("/:id", async (request, response) => {
 anime.post("/new", async (req, res) => {
   console.log("POST to /anime/new");
   const newAnime = req.body;
-  console.log(newAnime);
-  const animes = await addNewAnime(newAnime);
-  res.status(200).json(animes);
+  const anime = await addNewAnime(newAnime);
+  res.status(200).json(anime);
 });
 
 anime.delete("/:id", async (request, response) => {

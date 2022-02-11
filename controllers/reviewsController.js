@@ -1,6 +1,5 @@
 const express = require("express");
 const {
-  getAllReviews,
   getReview,
   newReview,
   updateReview,

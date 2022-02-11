@@ -21,11 +21,12 @@ const getOneAnime = async (id) => {
 
 const addNewAnime = async (newAnime) => {
   try {
-    const animes = await database.any(
+    const anime = await database.one(
       "INSERT INTO anime (name, release) VALUES ($1, $2) RETURNING *",
       [newAnime.name, newAnime.release]
     );
-    return animes;
+
+    return anime;
   } catch (error) {
     return error;
   }
