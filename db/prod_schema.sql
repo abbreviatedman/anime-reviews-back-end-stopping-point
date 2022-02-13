@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS d8nqginudrrpiq
 -- step 2 create the db
 CREATE DATABASE d8nqginudrrpiq
 -- step 3 connect to the db
-\c animes_dev;
+\c d8nqginudrrpiq
 -- step 4 create a table for the db with these values
 CREATE TABLE anime (
     id SERIAL PRIMARY KEY,
