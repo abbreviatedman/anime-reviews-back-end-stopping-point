@@ -12,7 +12,9 @@ const cn = {
   password: process.env.PG_PASSWORD,
 };
 
-console.log(cn);
+console.log(
+  "postgres://olwhjzrzznzcex:37045a5593cf766391a4f77bb50dd0109017dba767ebdabe8ed7118feffda146@ec2-54-159-244-207.compute-1.amazonaws.com:5432/d8nqginudrrpiq"
+);
 
 //  database is now our db i.e anime_dev
 const database = pgp(cn);
