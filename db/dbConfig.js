@@ -12,6 +12,8 @@ const cn = {
   password: process.env.PG_PASSWORD,
 };
 
+console.log(cn.PG_USER);
+
 //  database is now our db i.e anime_dev
 const database = pgp(cn);
 
