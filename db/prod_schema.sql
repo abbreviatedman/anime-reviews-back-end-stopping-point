@@ -1,10 +1,14 @@
--- step 1 in case we already have a db, drop it
-DROP DATABASE IF EXISTS d8nqginudrrpiq;
--- step 2 create the db
-CREATE DATABASE d8nqginudrrpiq;
--- step 3 connect to the db
+-- step 1: connect to the db
+
 \c d8nqginudrrpiq
--- step 4 create a table for the db with these values
+
+-- step 2: in case we already have tables, drop them
+
+DROP TABLE IF EXISTS anime;
+DROP TABLE IF EXISTS reviews;
+
+-- step 3: create our tables
+
 CREATE TABLE anime (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
