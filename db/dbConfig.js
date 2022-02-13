@@ -5,8 +5,14 @@ require("dotenv").config();
 
 // this is the object we are passing to pr-promise so we can connect to the proper db
 const cn = {
-  DATABASE_URL: process.env.DATABASE_URL,
+  host: process.env.PG_HOST,
+  port: process.env.PG_PORT,
+  database: process.env.PG_DATABASE,
+  user: process.env.PG_USER,
+  password: process.env.PG_PASSWORD,
 };
+
+console.log(cn);
 
 //  database is now our db i.e anime_dev
 const database = pgp(cn);
