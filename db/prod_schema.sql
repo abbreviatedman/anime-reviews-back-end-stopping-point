@@ -1,7 +1,7 @@
--- step 1 incase we already have a db, drop it
-DROP DATABASE IF EXISTS d8nqginudrrpiq
+-- step 1 in case we already have a db, drop it
+DROP DATABASE IF EXISTS d8nqginudrrpiq;
 -- step 2 create the db
-CREATE DATABASE d8nqginudrrpiq
+CREATE DATABASE d8nqginudrrpiq;
 -- step 3 connect to the db
 \c d8nqginudrrpiq
 -- step 4 create a table for the db with these values
