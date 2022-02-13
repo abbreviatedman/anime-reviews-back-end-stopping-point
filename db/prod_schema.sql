@@ -4,8 +4,8 @@
 
 -- step 2: in case we already have tables, drop them
 
-DROP TABLE IF EXISTS anime;
 DROP TABLE IF EXISTS reviews;
+DROP TABLE IF EXISTS anime;
 
 -- step 3: create our tables
 
