@@ -1,5 +1,5 @@
 -- step 1 connect to the db
-\c animes_dev
+\c d8nqginudrrpiq
 -- step 2 add values to our table
 INSERT INTO anime (name, release) VALUES 
 ('One Piece', 1999),
